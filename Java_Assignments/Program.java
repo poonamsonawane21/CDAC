@@ -1,16 +1,32 @@
 
 public class Program {
+
 	public static void main(String[] args) {
-		System.out.println("Enetr the first Number");
-		float num1=ConsoleInput.getFloat();
+		Base obj=new Base();
+		obj.display();
 		
-		System.out.println("Enetr the second Number");
-		float num2=ConsoleInput.getFloat();
+		Derived obj1=new Derived();
+		obj1.show();
+		obj.num1=4;
+		System.out.println(obj.num1);
 		
-		Calculator objCalculator=new Calculator();
+		Base obj2 =new Base();
+		Derived data=new Derived();
+		obj2=data;
+		System.out.println(obj2);
 		
-		float result=objCalculator.add(num1, num2);
+		Base obj4=null;
+		data=(Derived)obj4;
+		System.out.println(data);
 		
-		System.out.println(result);
+		data=(Derived)obj2;
+		System.out.println(data);
+		data.num3=8;
+		System.out.println(data.num3);
+		
+		DerivedMost obj5=new DerivedMost();
+		obj5.showw();
+		
 	}
+
 }
