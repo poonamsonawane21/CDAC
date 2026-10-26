@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poonam Sonawane | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Fixed header: the navigation stays visible while scrolling. -->
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <img src="images/logo.svg" alt="Poonam portfolio logo" width="42" height="42">
+            <span>Poonam Sonawane</span>
+        </a>
+
+        <nav id="main-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img class="profile-photo" src="images/Poonam.jpeg" alt="Profile illustration for Poonam Sonawane" width="250" height="150">
+            <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+            <h1>Hi, I'm <span>Poonam Sonawane</span></h1>
+            <p class="hero-text">A Computer Science graduate building my skills in software development, databases, and web technologies.</p>
+            <a class="button" href="projects.html">View My Projects</a>
+        </section>
+
+        <section class="intro-row" id="about">
+            <aside class="subscribe-box">
+                <h2>Stay Connected</h2>
+                <p>Leave your email to stay updated on my learning journey.</p>
+                <!-- This form is a front-end demo; it does not send or store email addresses yet. -->
+                <form action="#" method="post">
+                    <label for="subscribe-email">Email address</label>
+                    <input type="email" id="subscribe-email" name="subscribe-email" placeholder="you@example.com" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </aside>
+
+            <article class="about-box">
+                <h2>About Me</h2>
+                <p>I have a background in Computer Science and am currently pursuing a PGCP-AC course. I enjoy learning how software works and solving problems step by step. My strongest subject is <span class="highlight">SQL and MySQL</span>, and I am regularly practising to improve my communication and technical skills.</p>
+                <p>My goal is to begin my career as a <strong>Software Developer</strong> and keep growing through practical projects and continuous learning.</p>
+                <a class="text-link" href="contact.html">Get in touch →</a>
+            </article>
+        </section>
+
+        <section class="cards-section">
+            <div class="section-heading">
+                <p class="eyebrow">A LITTLE ABOUT MY JOURNEY</p>
+                <h2>Education, Skills & Projects</h2>
+            </div>
+
+            <div class="info-cards">
+                <article class="info-card education-card">
+                    <div class="card-icon" aria-hidden="true">🎓</div>
+                    <h3>Education</h3>
+                    <ol class="education-list">
+                        <li>12th Standard — Maharashtra Board</li>
+                        <li>B.Tech in Computer Science — Usha Mittal Institute of Technology</li>
+                        <li>Currently pursuing PGCP-AC</li>
+                    </ol>
+                </article>
+
+                <article class="info-card skills-card">
+                    <div class="card-icon" aria-hidden="true">💻</div>
+                    <h3>Technical Skills</h3>
+                    <ul id="skills-list">
+                        <li>SQL and MySQL</li>
+                        <li>DBMS fundamentals</li>
+                        <li>Java</li>
+                        <li>C++</li>
+                        <li>HTML and CSS</li>
+                    </ul>
+                </article>
+
+                <article class="info-card projects-card">
+                    <div class="card-icon" aria-hidden="true">🚀</div>
+                    <h3>Projects</h3>
+                    <p>I am currently preparing to build projects that apply my programming, database, and web development skills.</p>
+                    <p class="small-note">Practice projects will be added here as I complete them.</p>
+                    <a class="text-link" href="projects.html">Explore project page →</a>
+                    <span class="card-badge">Learning</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="social-section">
+            <h2>Let's Connect</h2>
+            <p>You can add your professional profiles below.</p>
+            <!-- Replace these example URLs with your real profile links before submission. -->
+            <a class="text-link" href="https://github.com/poonamsonawane21" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <span class="link-divider">•</span>
+            <a class="text-link" href="https://www.linkedin.com/in/poonam-sonawane2109/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Poonam Sonawane · Personal Portfolio</p>
+    </footer>
+</body>
+</html>

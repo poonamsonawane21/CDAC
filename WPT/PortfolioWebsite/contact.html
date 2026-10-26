@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Poonam Sonawane</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Internal CSS: page-specific adjustment for the contact page. -->
+    <style>
+        .contact-intro { max-width: 680px; margin: 0 auto 28px; text-align: center; }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <img src="images/logo.svg" alt="Poonam portfolio logo" width="42" height="42">
+            <span>Poonam Sonawane</span>
+        </a>
+        <nav id="main-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html" aria-current="page">Contact</a>
+            <a href="index.html#about">About</a>
+        </nav>
+    </header>
+
+    <main class="page-main">
+        <section class="page-heading">
+            <p class="eyebrow">SAY HELLO</p>
+            <h1>Contact Me</h1>
+            <p class="contact-intro">Have a question or want to connect? Fill in the form below. This is a front-end demonstration form and will not send information until connected to a server.</p>
+        </section>
+
+        <section class="contact-layout">
+            <form class="contact-form" id="contact-form" action="https://example.com/contact" method="post" enctype="multipart/form-data">
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="visitor-name">Your name</label>
+                        <input type="text" id="visitor-name" name="name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="visitor-email">Email address</label>
+                        <input type="email" id="visitor-email" name="email" placeholder="you@example.com" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="contact-date">Preferred contact date</label>
+                        <input type="date" id="contact-date" name="contact-date">
+                    </div>
+                    <div class="form-field">
+                        <label for="enquiry-type">Enquiry type</label>
+                        <select id="enquiry-type" name="enquiry-type" required>
+                            <option value="">Choose an option</option>
+                            <option value="opportunity">Career opportunity</option>
+                            <option value="project">Project discussion</option>
+                            <option value="general">General enquiry</option>
+                        </select>
+                    </div>
+                </div>
+
+                <fieldset class="form-field radio-field">
+                    <legend>Preferred contact mode</legend>
+                    <label><input type="radio" id="mode-email" name="contact-mode" value="email" required> Email</label>
+                    <label><input type="radio" id="mode-phone" name="contact-mode" value="phone"> Phone</label>
+                </fieldset>
+
+                <div class="form-field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                </div>
+
+                <div class="form-field">
+                    <label for="cv-upload">Upload CV (optional)</label>
+                    <input type="file" id="cv-upload" name="cv-upload" accept=".pdf,.doc,.docx">
+                </div>
+
+                <div class="form-field consent-field">
+                    <label><input type="checkbox" id="consent" name="consent" required> I agree to share the information above for this enquiry.</label>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit">Submit Message</button>
+                    <button type="reset" class="secondary-button">Reset</button>
+                </div>
+            </form>
+
+            <aside class="contact-note">
+                <h2>Find Me</h2>
+                <p>Location: Palghar, Maharashtra</p>
+                <p class="small-note">Map embed is an example location view. Replace it with your preferred city or college map if needed.</p>
+                <iframe title="Map of Palghar, Maharashtra" src="https://www.google.com/maps?q=Palghar%2C%20Maharashtra&output=embed" width="100%" height="260" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p><a class="text-link" href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub ↗</a></p>
+            </aside>
+        </section>
+    </main>
+
+    <footer><p>© 2026 Poonam Sonawane · Personal Portfolio</p></footer>
+</body>
+</html>
