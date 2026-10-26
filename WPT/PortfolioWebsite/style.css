@@ -1,5 +1,3 @@
-/* Selector precedence (strongest to weakest): inline style > ID > class/attribute/pseudo-class > tag/pseudo-element > universal.
-   If specificity is equal, the later matching rule generally wins. */
 
 * {
     box-sizing: border-box;
@@ -182,7 +180,7 @@ input:focus, select:focus, textarea:focus { outline: 2px solid #c9bfff; border-c
 .info-card ul, .info-card ol { padding-left: 21px; }
 .info-card li { margin-bottom: 9px; }
 .card-badge {
-    position: absolute; /* Absolute positions this label inside the relative card. */
+    position: absolute; 
     top: 16px;
     right: 16px;
     background: var(--mint);
